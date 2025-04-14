@@ -1,6 +1,6 @@
 Spree::Core::Engine.add_routes do
   # Add your extension routes here
-  namespace :admin do
+  namespace :admin, path: Spree.admin_path do
     resources :orders do
       resources :return_authorizations do
         resources :return_labels
